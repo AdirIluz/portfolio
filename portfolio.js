@@ -32,7 +32,7 @@ let projects = [
         description: "TecIt is an online gaming shop, With a user-friendly web interface, customers can easily order their favorite products.",
         link: "https://techit-adir.netlify.app/",
         image: "images/projects/techit.png",
-        stack: "Html, JS",
+        stack: "Html, JS ,CSS",
         gitHub: "https://github.com/AdirIluz/techit",
     }, {
         id: 3,
@@ -40,7 +40,7 @@ let projects = [
         description: "ManageU is a Todo list app, to help users organize and manage their tasks efficiently and easy to operate. ",
         link: "https://adir-manageu.netlify.app/",
         image: "images/projects/managu.png",
-        stack: "JS , TS , HTML",
+        stack: "JS , TS , HTML , CSS",
         gitHub: "https://github.com/AdirIluz/managu",
     }, {
         id: 4,
@@ -48,8 +48,16 @@ let projects = [
         description: "MyAccount is a finance management app that allows users to effortlessly track their expenses and incomes.",
         link: "https://adir-myaccount.netlify.app/",
         image: "images/projects/account.png",
-        stack: "JS, HTML",
+        stack: "JS, HTML , CSS",
         gitHub: "https://github.com/AdirIluz/myAccount",
+    }, {
+        id: 5,
+        name: "TicTacToe",
+        description: "The nostalgia game TicTacToe friendly web-app, you can enjoy hours of fun and compete against your friends.",
+        link: "https://adir-tictactoe.netlify.app/",
+        image: "images/projects/tictactoe.png",
+        stack: "JS, HTML , CSS",
+        gitHub: "https://github.com/AdirIluz/tictactoe",
     }
 ];
 // print projects
