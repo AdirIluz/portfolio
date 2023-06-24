@@ -1,0 +1,486 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+    overflow-x: hidden;
+
+}
+
+body {
+    background-color: #222022;
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/bgc2.svg);
+    font-family: 'Heebo', sans-serif;
+}
+
+
+.container {
+    height: 100%;
+    width: 99vw;
+    display: flex;
+    text-align: justify;
+    flex-wrap: wrap;
+    flex-direction: column;
+
+}
+
+header {
+    background-image: url(images/bgc2.svg);
+
+}
+
+nav {
+    background-color: #222022;
+}
+
+nav li {
+    margin-right: 10px;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.name {
+    font-size: 1.5em;
+    color: #efedef;
+    text-decoration: none;
+}
+
+.linkNav {
+    font-size: 1.2em;
+    color: #ceccce;
+    text-transform: uppercase;
+
+    position: relative;
+    text-decoration: none;
+}
+
+.linkNav:hover,
+.linkNav:focus,
+.linkNav.active {
+    color: #efedef;
+}
+
+.linkNav::after {
+    content: '';
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #6ead3a;
+    transition: width 0.5s ease-in-out;
+}
+
+.linkNav:hover::after,
+.linkNav.active::after {
+    width: 100%;
+}
+
+.navbar-nav .nav-link:focus {
+    color: #6ead3a;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .nav-link.active:hover {
+    color: #ceccce;
+}
+
+.resume {
+    background-color: #222022;
+    border: 2px solid #4c4947;
+    color: #ceccce;
+    text-decoration: none;
+    padding: 8px;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+#hamburger {
+    background-color: #4c4947;
+}
+
+.container {
+    color: #efedef;
+}
+
+.title {
+    font-size: 3em;
+    color: #efedef;
+}
+
+section {
+    padding: 20px 0;
+}
+
+/* ------ Top ----- */
+#top {
+    height: 50vh;
+}
+
+.intro {
+    height: 40vh;
+}
+
+/* ------ About Area --------- */
+.aboutBox {
+    /*  background-color: ; */
+    display: flex;
+    flex-direction: row;
+    padding-top: 2em;
+    /*   height: 50vh; */
+
+}
+
+#aboutMeLeft {
+    width: 50%;
+    margin-right: 0.3em;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0.5em;
+
+}
+
+.personalDetails {
+    margin-left: 1em;
+    color: #efedef;
+    font-size: 1.2em;
+
+}
+
+.personalDetails p {
+    background-color: rgb(34, 32, 34, .5);
+    padding: 0.6em;
+    border-radius: 0.6em;
+
+}
+
+.personalDetails p i {
+    color: #6ead3a;
+}
+
+.personalDetails a {
+    text-decoration: none;
+    color: #efedef;
+}
+
+#aboutMeRight {
+    width: 50%;
+    margin-right: 5px;
+    /* height: 35vh; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 8px;
+}
+
+#aboutMeRight h2 {
+    font-size: 2.2em;
+}
+
+#aboutMeRight p {
+    font-size: 1.3em;
+    width: 90%;
+}
+
+#skills {
+    width: 90%;
+}
+
+.skill {
+    width: 3.5em;
+    height: 3.5em;
+    margin: 1em;
+}
+
+.skill:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+/* ----- Projects Area -----*/
+#projectsBox {
+    display: flex;
+    flex-direction: row;
+}
+
+img {
+    width: 200px;
+    height: 250px;
+}
+
+.card {
+    margin: 10px 0;
+    border: 2px solid #4c4947;
+    padding: 5px;
+    background-color: #222022;
+    color: #ceccce;
+}
+
+.card img {
+    max-height: 200px;
+    object-fit: cover;
+    transform: scale(0.8);
+    filter: grayscale(90%);
+}
+
+.card img:hover {
+    filter: grayscale(0%);
+    transform: scale(1.0);
+    transition: transform 1s;
+}
+
+.card h5 {
+    font-size: 1.8em;
+}
+
+.card li {
+    border: 1px solid #4c4947;
+    background-color: #222022;
+    color: #ceccce;
+}
+
+.card a {
+    text-decoration: none;
+    color: #6ead3a;
+}
+
+.card-text {
+    font-family: 'Roboto', sans-serif;
+}
+
+/* ----- Contact Area ----- */
+#contact {
+    height: 50vh;
+    background-color: #222022;
+    border: 2px solid #6ead3a;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: row;
+}
+
+.form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form input,
+.form textarea {
+    background-color: #222022;
+    width: 30em;
+    margin: 0.6em;
+    border: 2px solid #ceccce;
+    color: #ceccce !important;
+}
+
+.form input:focus,
+.form textarea:focus {
+    background-color: #222022;
+}
+
+.form textarea::placeholder,
+.form input::placeholder {
+    color: #ceccce;
+}
+
+.form button {
+    background-color: #222022;
+    border: 2px solid #6ead3a;
+    border-radius: 5px;
+    color: #ceccce;
+    margin-top: 0.5em;
+    padding: 0.5em;
+    cursor: pointer;
+}
+
+.form button:hover {
+    transform: scale(1.1);
+}
+
+.error {
+    color: red;
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact h3 {
+    font-size: 3em;
+}
+
+.info p {
+    font-size: 1em;
+}
+
+.info ul li {
+    list-style-type: none;
+    font-size: 1.1em;
+}
+
+.info ul li i {
+    color: #6ead3a;
+}
+
+.social ul li {
+    display: inline;
+    margin: 0 0.5em;
+}
+
+.social ul li a {
+    font-size: 2.2em;
+}
+
+.social ul li i:hover {
+    transform: scale(1.2);
+    transition: transform 0.5s;
+}
+
+/* ---- footer / copywrite ---- */
+footer {
+    background-color: #4c4947;
+    text-align: center;
+    margin-top: 8px;
+    height: 4vh;
+}
+
+.copy {
+    color: #ceccce;
+    font-size: 8pt;
+}
+
+@media (max-width:576px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 10px;
+    }
+
+    /* about */
+
+    .container {
+        width: 98vw;
+    }
+
+    .resume {
+        border: none;
+        padding: 0 auto;
+        margin: 0 auto;
+    }
+
+    .navbar ul {
+        padding: 0 auto;
+    }
+
+
+
+    #aboutMeRight h2 {
+        font-size: 1.8em;
+    }
+
+    #aboutMeRight p {
+        font-size: 1.2em;
+    }
+
+    /* Contact */
+    .form input,
+    .form textarea {
+        width: 20em;
+    }
+}
+
+@media ((min-width: 577px)and (max-width:768px)) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 11px;
+    }
+
+    /* About */
+    #aboutMeRight h2 {
+        font-size: 1.8em;
+    }
+
+    #aboutMeRight p {
+        font-size: 1.2em;
+    }
+
+
+    /* Contact */
+    .form input,
+    .form textarea {
+        width: 22em;
+    }
+}
+
+@media ((min-width: 769px)and (max-width:999px)) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 13px;
+    }
+
+    /* About */
+    #aboutMeRight h2 {
+        font-size: 1.8em;
+    }
+
+    #aboutMeRight p {
+        font-size: 1.2em;
+    }
+
+
+    /* Contact */
+    .form input,
+    .form textarea {
+        width: 22em;
+    }
+}
+
+@media ((min-width: 1000px)and (max-width:1400px)) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    html {
+        font-size: 15px;
+    }
+
+    .form input,
+    .form textarea {
+        width: 25em;
+    }
+
+
+}
