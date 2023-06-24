@@ -9,6 +9,7 @@ I added 5 projects you can take a look:
 3. ManageU
 4. MyAccount
 5. TicTacToe
+
 You can find information about each one in the portfolio , you can find providing information about me and there are few ways to contact me :D.
 
 # Languages & Techniques 
